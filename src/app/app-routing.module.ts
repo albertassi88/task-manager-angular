@@ -3,7 +3,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { TarefasRouting } from './tarefas';
+
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/tarefas/listar',
+    pathMatch: 'full'
+  },
+  ...TarefasRouting   //passando todas as rotas das tarefas
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
