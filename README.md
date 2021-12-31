@@ -5,9 +5,10 @@
 - Bootstrap foi usado para os estilos das páginas
 
 # instalações
-- ng new nome-do-projeto (novo projeto em angular)
+- ng new nome-do-projeto (criar novo projeto em angular)
 - npm i --save bootstrap@3 (instalação do bootstrapna versão 3)
-- ng g module nome-do-modulo (criando um novo módulo)
+- ng g module nome-do-modulo (criar um novo módulo)
+- ng g service nome-do-serviço (criar um serviço para a regra de negócio)
 
 # configuração
 - adicionar o caminho do bootstrap no arquivo angular.json em: 
