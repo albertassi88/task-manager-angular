@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Tarefa, TarefaService } from '..';
+
 @Component({
   selector: 'app-listar',
   templateUrl: './listar.component.html',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarComponent implements OnInit {
 
-  constructor() { }
+  tarefas: Tarefa[] = [];
+
+  constructor(private tarefaService: TarefaService) { }
 
   ngOnInit(): void {
+    this.tarefas = this.listarTodos();
+  }
+
+  listarTodos(): Tarefa[] {
+    return this.tarefaService.listarTodos();
   }
 
 }
