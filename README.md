@@ -7,6 +7,7 @@
 # instalações
 - ng new nome-do-projeto (novo projeto em angular)
 - npm i --save bootstrap@3 (instalação do bootstrapna versão 3)
+- ng g module nome-do-modulo (criando um novo módulo)
 
 # configuração
 - adicionar o caminho do bootstrap no arquivo angular.json em: 
