@@ -9,7 +9,7 @@ import { Tarefa, TarefaService } from '..';
 })
 export class ListarComponent implements OnInit {
 
-  tarefas: Tarefa[] = [];
+  tarefas: Tarefa[];
 
   constructor(private tarefaService: TarefaService) { }
 
